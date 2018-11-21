@@ -124,7 +124,7 @@ body {
 			success : function(data) {
 				console.log(data);
 				if(data === "no employees found for selected project select other project"){
-			             location.href = "http://localhost:8081/Spring201/assignTask";
+			             location.href = "http://ec2-52-36-36-205.us-west-2.compute.amazonaws.com/Spring201-0.0.1-SNAPSHOTassignTask";
 				}
 				$.each(data, function(index, currEmp) {
 					var toAppend = '';
@@ -167,7 +167,7 @@ body {
 				$('#updateResult').append("Details added successfully")
 				alert("Details added successfully.")
 				alert("Redirecting to home page.")
-				location.href = "http://localhost:8081/Spring201/"
+				location.href = "http://ec2-52-36-36-205.us-west-2.compute.amazonaws.com/Spring201-0.0.1-SNAPSHOT"
 			},
 			complete : function(xhr, textStatus) {
 			},
@@ -179,7 +179,7 @@ body {
 
 	function cancel() {
 		alert("Redirecting to home page.")
-		location.href = "http://localhost:8081/Spring201/"
+		location.href = "http://ec2-52-36-36-205.us-west-2.compute.amazonaws.com/Spring201-0.0.1-SNAPSHOT"
 	}
 </script>
 
